@@ -1,4 +1,6 @@
 
+- [[20250426-notes-java.md]]
+
 - # AP Computer Science A
 
 - ## Konu Başlıkları:
