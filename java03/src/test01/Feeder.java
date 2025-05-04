@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Feeder {
     public int currentFood;
+    public int totalFood;
     public Feeder(int currentFood) {
         this.currentFood = currentFood;
     }
@@ -11,7 +12,7 @@ public class Feeder {
         Random r = new Random();
         int food = r.nextInt(41);
         int food2 = 10 + food;
-        int totalFood = numBirds * food2;
+        totalFood = numBirds * food2;
 
         if (totalFood < currentFood) {
             currentFood = currentFood - totalFood;
@@ -32,6 +33,18 @@ public class Feeder {
     }
     public int simulateManyDays(int numBirds, int numDays) {
         // ...
-        return 0;
+        int day=1;
+        this.simulateOneDay(numBirds);
+        while(0 < numDays){
+           currentFood= currentFood-totalFood;
+           System.out.println(day + ".day :"+ currentFood);
+           numDays--;
+           day++;
+           if(currentFood<=totalFood){
+               break;
+           }
+        }
+
+        return day;
     }
 }
