@@ -3,9 +3,9 @@ class Car {
     int speed;
 
     // Constructor
-    public Car(String carModel) {
+    public Car(String carModel, int carSpeed) {
         this.model = carModel;
-        this.speed = 0;  // Start with speed 0
+        this.speed = carSpeed;  // Start with speed 0
     }
 
     // Instance method to accelerate
@@ -23,7 +23,7 @@ class Car {
 
 public class LearnJava5 {
     public static void main(String[] args) {
-        Car myCar = new Car("mercedes");
+        Car myCar = new Car("mercedes",120);
         myCar.startDriving();  // Output: Toyota is starting to move!
         //         Toyota is now going at 20 mph.
     }
