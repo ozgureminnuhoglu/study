@@ -1,5 +1,7 @@
 my questions:
+
 1. where should i put attributes?
+
 Attributlar her zaman class scope içinde tanımlanır.
 `class` ifadesinden sonra. Herhangi bir method içinde değil.
 
@@ -31,7 +33,7 @@ X constructor methodunu ise, sıfırdan çağırabilirsin. Fakat `new` kelimesiy
 
 ```java
 X a1 = new X(); // burada X() constructor'ını çağırdım
-a1.f(); // burada da f() methtodunu çağırdım.
+a1.f(); // burada da f() methodunu çağırdım.
 ```
 
 Dikkat: f() methodunu a1 nesnesi üzerinden çağırıyorum. Sıfırdan çağıramam.
